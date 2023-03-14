@@ -4,13 +4,13 @@ import '../App.css';
 function Beverage(props) {
   return (
 
-    <div className='beverage'>
+    <div className='beverage-container'>
       <img src={props.image} alt='drinks' />
       <div>
-        <div className='title'>
+        <div className='beverage-title'>
           {props.title}
         </div>
-        <div className='summary'>{props.summary}</div>
+        <div className='beverage-summary'>{props.summary}</div>
         <button className='btn'>Order Now</button>
       </div>
     </div>
@@ -20,7 +20,7 @@ function Beverage(props) {
 function App() {
   return (
     <div>
-      <div className='title'>
+      <div className='beverage-header'>
         Beverage Specials
       </div>
       <div className='beverages'>
