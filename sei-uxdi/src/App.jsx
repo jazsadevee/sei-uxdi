@@ -15,8 +15,8 @@ function App() {
       <Carousel></Carousel>
       <FullCard></FullCard>
       <TableCellCard></TableCellCard>
-      <Footer></Footer>
       <SplitCard></SplitCard>
+      <Footer></Footer>
     </>
   );
 }
