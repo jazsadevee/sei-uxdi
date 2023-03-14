@@ -4,14 +4,14 @@ import '../App.css';
 function Beverage(props) {
   return (
 
-    <div className='beverage'>
+    <div className='beverage-container'>
       <img src={props.image} alt='drinks' />
       <div>
-        <div className='title'>
+        <div className='beverage-title'>
           {props.title}
         </div>
-        <div className='summary'>{props.summary}</div>
-        <button className='btn'>Order Now</button>
+        <div className='beverage-summary'>{props.summary}</div>
+        <button className='beverage-btn'>Order Now</button>
       </div>
     </div>
   )
@@ -20,7 +20,7 @@ function Beverage(props) {
 function App() {
   return (
     <div>
-      <div className='title'>
+      <div className='beverage-header'>
         Beverage Specials
       </div>
       <div className='beverages'>
@@ -30,11 +30,13 @@ function App() {
           title="Ube Latte"
           summary="A delicious mixture of espresso, ube flavoring, and sweetened condensed coconut milk"
         />
+        <div className='line-break'></div>
         <Beverage
           image="https://i.imgur.com/4Tr7HGT.png"
           title="Kashmiri Chai"
           summary="Often called Pink Tea, Kashmiri chai is a milk tea characterized by its dusty pink color"
         />
+        <div className='line-break'></div>
         <Beverage
           image="https://i.imgur.com/hq8js8J.png"
           title="Pea Flower Tea"

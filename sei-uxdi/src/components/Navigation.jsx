@@ -1,20 +1,12 @@
 import { useEffect, useState } from 'react';
 import '../App.css';
-import Moon from "../assets/moon.svg";
-import Sun from "../assets/sun.svg";
 
 
 
 export default function Navigation() {
   const [state, setState] = useState();
 
-  const knob = document.querySelector(".knob")
-  const nav = document.querySelector(".navigation")
-  const toggleContainer = document.querySelector(".toggle-container")
-  const moon = document.querySelector(".moon-path")
-  const sun = document.querySelector(".sun-path")
-  const swirl = document.querySelector(".swirl-path")
-  const title = document.querySelector(".title")
+  const body = document.querySelector('body')
 
   function handleClick(event) {
     if (state === "light") {
@@ -29,28 +21,16 @@ export default function Navigation() {
       return
     }
     else if (state === "light") {
-      knob.classList.add("knob-dark")
-      nav.classList.add("nav-dark")
-      toggleContainer.classList.add("toggle-container-dark")
-      moon.classList.add("moon-path-dark")
-      sun.classList.add("sun-path-dark")
-      swirl.classList.add("swirl-path-dark")
-      title.classList.add("title-dark")
+      body.classList.add("dark")
     } else {
-      knob.classList.remove("knob-dark")
-      nav.classList.remove("nav-dark")
-      toggleContainer.classList.remove("toggle-container-dark")
-      moon.classList.remove("moon-path-dark")
-      sun.classList.remove("sun-path-dark")
-      swirl.classList.remove("swirl-path-dark")
-      title.classList.remove("title-dark")
+      body.classList.remove("dark")
     }
   }, [state])
 
 
   return (
     <div className="navigation">
-      <span className="title">Milky's Way</span>
+      <span className="nav-title">Milky's Way</span>
       <span className="swirl-container">
         <svg width="29" height="30" viewBox="0 0 29 30" xmlns="http://www.w3.org/2000/svg">
           <path className="swirl-path" d="M12.5318 24.9455C18.8622 27.4861 26.0854 24.2465 28.9057 22.3091L26.2883 25.4848C21.6622 30.4222 15.839 30.3383 13.5057 29.6792C4.59441 28.3849 0.865134 20.7911 0.11441 17.156C-0.737764 7.74861 3.15789 2.41576 12.2275 0.378499C19.4831 -1.25131 24.6246 2.77528 26.2883 4.99231C32.8135 15.1067 26.0448 20.5514 21.8448 22.0095C13.2257 24.9335 9.97528 19.0734 9.42745 15.7778C8.8918 9.30652 13.5057 8.36778 15.8796 8.70732C17.0564 8.90705 19.2761 10.1094 18.7405 13.3211C18.2048 16.5328 15.2709 16.2971 13.8709 15.7778C16.4518 19.0854 20.0593 18.0748 21.5405 17.156C24.2675 14.8071 23.326 10.9443 22.5144 9.30652C18.4727 2.78727 11.7405 5.27193 8.87963 7.32917C1.03963 16.1493 8.04774 22.7485 12.5318 24.9455Z" />
