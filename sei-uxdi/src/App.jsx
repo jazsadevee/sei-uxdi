@@ -5,6 +5,10 @@ import Carousel from './components/Carousel'
 import TableCellCard from './components/TableCellCard';
 import FullCard from './components/FullCard';
 import Footer from './components/Footer';
+// import logo from ‘./logo.svg’;
+import './TableCellCard.css';
+import TableCellCard from './Components/TableCellCard.jsx';
+import SplitCard from './Components/SplitCard.jsx'
 
 function App() {
   return (
@@ -14,6 +18,7 @@ function App() {
       <FullCard></FullCard>
       <TableCellCard></TableCellCard>
       <Footer></Footer>
+      <SplitCard></SplitCard>
     </>
   );
 }

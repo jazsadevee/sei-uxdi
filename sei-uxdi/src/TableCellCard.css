@@ -18,9 +18,12 @@ body {
 /* TABLE CARD */
 
 .beverage {
+  margin: 0 17px;
+  width: 100%;
   display: flex;
   border-radius: 10px;
   background: #F9E7DD;
+  border-bottom: 1px solid #D9D9D9;
 }
 
 .beverages {
@@ -78,6 +81,7 @@ body {
   transition: color ease-out 300ms;
   margin: 17px 71px 6px 17px;
 
+  /* margin: 0 0 6px 17px; */
 }
 
 .dark .beverage-header {
@@ -88,13 +92,16 @@ body {
   color: white;
   background: #9A6767;
   border-radius: 100px;
-  border: none;
-  width: 129px;
+  width: 126px;
   font-weight: bold;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 6px 2px 5px 0;
-  transition: background ease-out 300ms;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 0;
+}
+
+.pastry-content {
+  background-color: #F9E7DD;
+  padding: 12px;
 }
 
 .dark .beverage-btn {
