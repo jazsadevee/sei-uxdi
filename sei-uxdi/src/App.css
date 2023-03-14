@@ -8,10 +8,10 @@
 
 body {
   background-color: #F5F5F5;
-  transition: background-color ease-out 1s;
+  transition: background-color ease-out 300ms;
 }
 
-.dark body {
+.dark {
   background-color: #000;
 }
 
@@ -23,10 +23,25 @@ body {
   background: #F9E7DD;
 }
 
+.beverages {
+  background: #F9E7DD;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  transition: background ease-out 300ms;
+  padding: 20px;
+  width: 359px;
+}
+
+.dark .beverages {
+  background: #ababab;
+}
+
 .beverage-container img {
   height: 106px;
   width: 106px;
   margin: 12px 12px 12px 12px;
+  padding: 12px;
 }
 
 .beverage-title {
@@ -35,6 +50,11 @@ body {
   font-family: 'Playfair Display';
   font-size: 16px;
   font-weight: bold;
+  transition: color ease-out 300ms;
+}
+
+.dark .beverage-title {
+  color: #fff;
 }
 
 .beverage-summary {
@@ -43,6 +63,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: thin;
+  transition: color ease-out 300ms;
+}
+
+.dark .beverage-summary {
+  color: #fff;
 }
 
 .beverage-header {
@@ -50,24 +75,45 @@ body {
   font-family: 'Playfair Display';
   font-size: 20px;
   font-weight: bold;
+  transition: color ease-out 300ms;
+  margin: 17px 71px 6px 17px;
+
+}
+
+.dark .beverage-header {
+  color: #ffffff;
 }
 
 .beverage-btn {
   color: white;
   background: #9A6767;
   border-radius: 100px;
+  border: none;
   width: 129px;
   font-weight: bold;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 6px 2px 5px 0;
+  transition: background ease-out 300ms;
+}
+
+.dark .beverage-btn {
+  background: #737373;
+}
+
+.line-break {
+  width: 357px;
+  height: 1px;
+  margin: 11px 0 6.5px -20px;
+  background-color: #d9d9d9;
 }
 
 /* NAVIGATION COMPONENT */
 
 
 .navigation {
-  position: sticky;
+  position: fixed;
+  top: 0px;
   left: 0px;
   width: 393px;
   height: 60px;
@@ -207,7 +253,7 @@ body {
 
 .card {
   padding: 0;
-  margin: 0;
+  margin-top: 80px;
 }
 
 .main {
@@ -227,14 +273,17 @@ body {
   height: 120px;
   flex-grow: 0;
   margin-top: -4px;
-  /* margin: 250px 0 0; */
-  /* padding: 6px 63px 17px 11.9px; */
   background-color: #f9e7dd;
   background: #F9E7DD;
   border-radius: 0px 0px 10px 10px;
+  transition: background-color ease-out 300ms;
 }
 
-.Filipino-Breakfast-Daingsilog {
+.dark .Rectangle-19 {
+  background-color: #ababab;
+}
+
+.dish {
   width: 284px;
   height: 19px;
   margin: 0 0 9px 0.1px;
@@ -254,9 +303,14 @@ body {
   line-height: 21px;
   letter-spacing: -0.165px;
   color: #9A6767;
+  transition: color ease-out 300ms;
 }
 
-.A-traditional-Filipino-meal-the-dish-consists-of-fried-fish-garlic-fried-rice-and-fried-eggs {
+.dark .dish {
+  color: #fff;
+}
+
+.description {
   width: 280px;
   height: 33px;
   margin: 9px 4px 8px 0.1px;
@@ -269,17 +323,22 @@ body {
   letter-spacing: -0.17px;
   text-align: left;
   color: #000;
-  font-family: 'SF Pro Text';
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: -0.165px;
   color: #000000;
+  transition: color ease-out 300ms;
+}
+
+.dark .description {
+  color: #fff;
 }
 
 .Order-Now {
-  font-family: 'SF Pro Text';
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -292,6 +351,10 @@ body {
   border-radius: 100px;
   margin-top: 8px;
   width: 126px
+}
+
+.dark .Order-Now {
+  background-color: #737373;
 }
 
 .card-details {

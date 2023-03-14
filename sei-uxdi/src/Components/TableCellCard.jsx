@@ -11,7 +11,7 @@ function Beverage(props) {
           {props.title}
         </div>
         <div className='beverage-summary'>{props.summary}</div>
-        <button className='btn'>Order Now</button>
+        <button className='beverage-btn'>Order Now</button>
       </div>
     </div>
   )
@@ -30,11 +30,13 @@ function App() {
           title="Ube Latte"
           summary="A delicious mixture of espresso, ube flavoring, and sweetened condensed coconut milk"
         />
+        <div className='line-break'></div>
         <Beverage
           image="https://i.imgur.com/4Tr7HGT.png"
           title="Kashmiri Chai"
           summary="Often called Pink Tea, Kashmiri chai is a milk tea characterized by its dusty pink color"
         />
+        <div className='line-break'></div>
         <Beverage
           image="https://i.imgur.com/hq8js8J.png"
           title="Pea Flower Tea"
