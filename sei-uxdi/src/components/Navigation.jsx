@@ -1,20 +1,12 @@
 import { useEffect, useState } from 'react';
 import '../App.css';
-import Moon from "../assets/moon.svg";
-import Sun from "../assets/sun.svg";
 
 
 
 export default function Navigation() {
   const [state, setState] = useState();
 
-  const knob = document.querySelector(".knob")
-  const nav = document.querySelector(".navigation")
-  const toggleContainer = document.querySelector(".toggle-container")
-  const moon = document.querySelector(".moon-path")
-  const sun = document.querySelector(".sun-path")
-  const swirl = document.querySelector(".swirl-path")
-  const title = document.querySelector(".title")
+  const body = document.querySelector('body')
 
   function handleClick(event) {
     if (state === "light") {
@@ -29,21 +21,9 @@ export default function Navigation() {
       return
     }
     else if (state === "light") {
-      knob.classList.add("knob-dark")
-      nav.classList.add("nav-dark")
-      toggleContainer.classList.add("toggle-container-dark")
-      moon.classList.add("moon-path-dark")
-      sun.classList.add("sun-path-dark")
-      swirl.classList.add("swirl-path-dark")
-      title.classList.add("title-dark")
+      body.classList.add("dark")
     } else {
-      knob.classList.remove("knob-dark")
-      nav.classList.remove("nav-dark")
-      toggleContainer.classList.remove("toggle-container-dark")
-      moon.classList.remove("moon-path-dark")
-      sun.classList.remove("sun-path-dark")
-      swirl.classList.remove("swirl-path-dark")
-      title.classList.remove("title-dark")
+      body.classList.remove("dark")
     }
   }, [state])
 
