@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #FF00B8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navigation {
+  position: fixed;
+
+  left: 0px;
+  width: 393px;
+  height: 60px;
+  padding: 17px 17px 13px 312px;
+  background-color: #f9f9f9;
+  transition: background-color ease-out 300ms;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-dark {
+  background-color: #222;
+}
+
+.toggle-container {
+  position: relative;
+  width: 64px;
+  height: 30px;
+  flex-grow: 0;
+  padding: 2px 2px 2px 7px;
+  border-radius: 36.5px;
+  background: linear-gradient(to right, #ffb800 -3%, #ff00b8 100%);
+  transition: background ease-out 300ms;
+}
+
+.toggle-container-dark {
+  background: linear-gradient(90deg, #20045B -3.13%, #7A3DFA 103.13%);
+}
+
+.knob {
+  position: absolute;
+  left: 36px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.03), 0 1px 1px 0 rgba(0, 0, 0, 0.01), 0 3px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: left ease-out 300ms;
+}
+
+.knob-dark {
+  left: 2px;
+}
+
+.moon {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 7.5px;
+  left: 7px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.165px;
+  z-index: 1;
+}
+
+.moon-path {
+  fill: #FFC634;
+  transition: fill ease-out 3000ms;
+}
+
+.moon-path-dark {
+  fill: url("#dark-gradient")
+}
+
+.sun {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  top: 7px;
+  right: 4.75px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.165px;
+  background: linear-gradient(90deg, #FF00B8 -8.33%, #FFB800 108.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  z-index: 1;
+}
+
+.swirl-container {
+  width: 29px;
+  height: 30px;
+  position: absolute;
+  left: 197px;
+}
+
+.swirl-path {
+  fill: #D79881;
+  transition: fill ease-out 300ms;
+}
+
+.swirl-path-dark {
+  fill: #fff;
+}
+
+.sun-path {
+  fill: url("#light-gradient");
+  transition: fill ease-out 300ms;
+}
+
+.sun-path-dark {
+  fill: #AD87FF;
+}
+
+.title {
+  position: absolute;
+  width: 252px;
+  height: 74px;
+  top: -23px;
+  left: 15px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 43px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
+  letter-spacing: -0.165px;
+  color: #D79881;
+  transition: color ease-out 300ms;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title-dark {
+  color: #fff;
 }
