@@ -3,10 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evernight27/sei-uxdi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Evernight27/sei-uxdi/issues"
+  },
+  "homepage": "https://github.com/Evernight27/sei-uxdi#readme"
 }
