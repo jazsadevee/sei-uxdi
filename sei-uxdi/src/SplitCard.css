@@ -52,3 +52,14 @@
   font-weight: 600;
   font-size: 16px;
 }
+
+.btn {
+  color: white;
+  background: #9A6767;
+  border-radius: 100px;
+  width: 126px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 0;
+}
