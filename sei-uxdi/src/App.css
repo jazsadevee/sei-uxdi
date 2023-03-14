@@ -251,6 +251,22 @@ body {
 
 /* FULL CARD COMPONENT */
 
+.daily-special {
+  position: relative;
+  width: 305px;
+  height: 37px;
+  font-family: "Playfair Display";
+  margin: 40px 71px 6px 17px;
+  font-size: 20px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.17px;
+  text-align: left;
+  color: #9a6767
+}
+
 .card {
   padding: 0;
   margin-top: 80px;
