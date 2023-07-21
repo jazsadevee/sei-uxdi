@@ -1,6 +1,6 @@
 import { React } from 'react';
-import '../TableCellCard.css';
-import '../SplitCard.css'
+import '../styles/SplitCard.css';
+import '../styles/TableCellCard.css';
 
 function Pastries(props) {
   return (

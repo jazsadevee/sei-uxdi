@@ -1,5 +1,5 @@
 import { React } from 'react';
-import '../TableCellCard.css';
+import '../styles/TableCellCard.css';
 
 function Beverage(props) {
   return (
