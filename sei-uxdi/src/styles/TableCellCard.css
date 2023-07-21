@@ -4,11 +4,16 @@
   padding: 0;
 }
 
+/* @media screen and (max-width: 480px){
+} */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
   background-color: #F5F5F5;
   transition: background-color ease-out 300ms;
+  width: 393px;
+
 }
 
 .dark {
@@ -19,11 +24,15 @@ body {
 
 .beverage-container {
   margin: 0 17px 0 -20px;
-  width: 100%;
+  width: 393px;
   display: flex;
   border-radius: 10px;
   background: #F9E7DD;
   border-bottom: 1px solid #D9D9D9;
+}
+
+.dark .beverage-container {
+  background-color: #ababab;
 }
 
 .beverages {
@@ -37,7 +46,7 @@ body {
 }
 
 .dark .beverages {
-  background: #ababab;
+  background-color: #ababab;
 }
 
 .beverage-container img {
@@ -45,6 +54,10 @@ body {
   width: 106px;
   margin: 12px 12px 12px 12px;
   padding: 12px;
+}
+
+.dark .beverage-container img {
+  background-color: #ababab;
 }
 
 .beverage-title {

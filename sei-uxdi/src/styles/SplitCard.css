@@ -12,17 +12,18 @@
   font-weight: 800;
   font-size: 20px;
   margin: 17px 0 6px 17px;
-  width: 50%;
+  width: 393px;
 }
 
 .pastry-container {
   display: flex;
-  width: 100%;
+  width: 393px;
 }
 
 .pastry {
   /* width: 160px; */
   width: 100%;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .pastry img {
